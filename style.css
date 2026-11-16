@@ -1,0 +1,41 @@
+:root {
+    --color-bg: #EDC0C0;
+    --color-text: #872727;
+    --color-heading: #EC3232;
+    --color-accent: #C7A4B0;
+
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3 { 
+    color: var(--color-heading);
+}
+
+a {
+    color: var(--color-accent);
+}
+
+
+:root {
+    --color-accent: hsl(0, 55%, 50%);
+    --color-accent-hover: hsl(0, 55%, 40%);
+}
+
+a:hover {
+    color: var(--color-accent-hover);
+}
+
+
+:root {
+    --color-bg: #111111;
+    --color-text: #E19898;
+    --color-heading: #EDC0C0;
+    --color-accent: #DAC3CC;
+    --color-accent-hover: #EDC0C0;
+}
