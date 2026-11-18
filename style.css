@@ -1,8 +1,10 @@
 :root {
     --color-bg: #EDC0C0;
     --color-text: #872727;
-    --color-heading: #EC3232;
+    --color-headings: #EC3232;
     --color-accent: #C7A4B0;
+    --color-accent: hsl(0, 55%, 50%);
+    --color-accent-hover: hsl(0, 55%, 40%);
 }
 
 
@@ -14,18 +16,13 @@ body {
 h1,
 h2,
 h3 { 
-    color: var(--color-heading);
+    color: var(--color-headings);
 }
 
 a {
     color: var(--color-accent);
 }
 
-
-:root {
-    --color-accent: hsl(0, 55%, 50%);
-    --color-accent-hover: hsl(0, 55%, 40%);
-}
 
 a:hover {
     color: var(--color-accent-hover);

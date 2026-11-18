@@ -11,8 +11,9 @@ body {
     color: var(--color-text);
 }
 
-h1, h2, h3 {
-    color: var(--color-headings);
+h1,
+h2,
+h3  {color: var(--color-headings);
 }
 
 a {
