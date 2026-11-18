@@ -1,6 +1,6 @@
 # Lighthouse report
 
-Generated 2026-11-18 10:38 UTC from commit `ca747ea`.
+Generated 2026-11-18 10:56 UTC from commit `ce8b03b`.
 
 | Page | Performance | Accessibility | Best practices | SEO |
 |---|---|---|---|---|
@@ -15,7 +15,7 @@ For full explanations and advice, download **lighthouse-html-reports** from the 
 - **Browser errors were logged to the console**
 - **Background and foreground colors do not have a sufficient contrast ratio.**
 - **Touch targets do not have sufficient size or spacing.**
-- **Eliminate render-blocking resources** (Est savings of 150 ms)
+- **Eliminate render-blocking resources** (Est savings of 0 ms)
 - **Document does not have a meta description**
 - **Network dependency tree**
 - **Render blocking requests**
