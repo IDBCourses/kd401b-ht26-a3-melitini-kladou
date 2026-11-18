@@ -1,0 +1,20 @@
+:root {
+    --color-bg: #010101;
+    --color-text: #E19898;
+    --color-headings: #E19898;
+    --color-accent: #DAC3CC;
+    --color-accent-hover: #C7A4B0;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+h1, h2, h3 {
+    color: var(--color-headings);
+}
+
+a {
+    color: var(--color-accent);
+}
