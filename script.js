@@ -1,9 +1,3 @@
-const link= document.querySelector("#palette");
-const button = document.querySelector("#theme");
-
-button.addEventListener("click", function () {
-    const dark = link.getAttribute("href") === "dark.css";
-link.setAttribute("href", drak ? "light.css" : "dark.css");
 
 
 /*if (stylesheet.getAttribute("href") == "light.css") {
@@ -12,5 +6,12 @@ link.setAttribute("href", drak ? "light.css" : "dark.css");
 }else{
      stylesheet.setAttribute("href","light.css");
      button.textContent =" Dark Mode ";*/
-});
 
+
+const link = document.querySelector("#palette");
+const button = document.querySelector("#theme");
+
+button.addEventListener("click", function () {
+  const dark = link.getAttribute("href") === "dark.css";
+  link.setAttribute("href", dark ? "light.css" : "dark.css");
+});
