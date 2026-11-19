@@ -1,10 +1,13 @@
-const link= document.querySelector("#palette");
+const stylesheet= document.querySelector("#palette");
 const button = document.querySelector("#theme");
 
 button.addEventListener("click", function () {
-    const dark = link.getAttribute("href") === "dark.css";
-    console.log("Button clicked!");
-    link.setAttribute("href", dark ? "style.css" : "dark.css");
+if (stylesheet.getAttribute("href") == "light.css") {
+    stylesheet.setAttribute("href","dark.css");
+    button.textContent=" Light Mode ";
+}else{
+     stylesheet.setAttribute("href","light.css");
+     button.textContent =" Dark Mode ";
+}
 
-    console.log(link.getAttribute("href"));
 });
