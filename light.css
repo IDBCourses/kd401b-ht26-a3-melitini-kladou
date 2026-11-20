@@ -1,26 +1,58 @@
 :root {
-    --color-bg: #e6cccc;
-    --color-text: #4c2727;
-    --color-headings: #b93f3f;
-    --color-accent: #c73266;
-    
+    --color-primary-600: hsl(0, 55%, 14%);
+    --color-primary-500: hsl(0,55%, 24%);
+    --color-primary-400: hsl(0, 55%, 34%);
+    --color-primary-300: hsl(0, 55%, 44%);
+    --color-primary-150: hsl(0, 55%, 64%);
+    --color-primary-100: hsl(0, 55%, 74%);
+    --color-primary-90: hsl(0, 55%, 84%);
+    --color-primary-80: hsl(0, 56%, 90%);
+
+    --color-accent-500: hsl(338, 86%, 59%);
+    --color-accent-400: hsl(338, 24%, 51%);
+    --color-accent-300: hsl(338, 24%, 61%);
+    --color-accent-200: hsl(338, 24%, 71%);
+    --color-accent-100: hsl(338, 23%, 81%);
+    --color-accent-95: hsl(0, 56%, 84%);
+
+    --color-neutral-900: hsl(0, 4%, 0%);
+    --color-neutral-800: hsl(0, 0%, 10%);
+    --color-neutral-700: hsl(0, 0%, 20%);
+    --color-neutral-400: hsl(0, 0%, 50%);
+    --color-neutral-300: hsl(0, 0%, 80%);
+    --color-neutral-90: hsl(0, 0%, 100%);
+
+    --color-vibrant-500: hsl(116, 88%, 51%);
+    --color-vibrant-400: hsl(116, 88%, 71%);
+    --color-vibrant-300: hsl(116, 88%, 81%);
+    --color-vibrant-500r: hsl(0, 83%, 46%);
+    --color-vibrant-400r: hsl(0, 83%, 56%);
+    --color-vibrant-300r: hsl(0, 83%, 66%);
+    --color-vibrant-200r: hsl(0, 83%, 76%);
+    --color-vibrant-150r: hsl(0, 82%, 86%);
+    --color-vibrant-500b: hsl(228, 91%, 43%);
+    --color-vibrant-400b: hsl(228, 91%, 53%);
     --color-accent-hover: hsl(0, 78%, 13%);
 }
 
 
-body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
+html {
+    background-color: var(--color-primary-80);
+    color: var(--color-primary-500);
 }
 
-h1,
-h2,
+h1 {
+    color: var(--color-primary-400);
+}
+h2 {
+    color: var(--color-primary-300);
+}
 h3 { 
-    color: var(--color-headings);
+    color: var(--color-primary-300);
 }
 
 a {
-    color: var(--color-accent);
+    color: var(--color-accent-500);
 }
 
 
