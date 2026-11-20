@@ -2,9 +2,9 @@
     --color-bg: #300f0f;
     --color-text: #e7dbdb;
     --color-headings: #E19898;
-    --color-accent: #ece4e7;
+    --color-accent: #fac2d7;
     
-    --color-accent-hover: #eebecf;
+    --color-accent-hover: #f8ffd4;
 }
 
 html {
@@ -19,8 +19,8 @@ h3  {color: var(--color-headings);
 
 a {
     color: var(--color-accent);
-}
+}   
 
-a {
+a:hover {
     color: var(--color-accent-hover);
 }
