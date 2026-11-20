@@ -1,6 +1,6 @@
 # Lighthouse report
 
-Generated 2026-11-19 21:43 UTC from commit `e704164`.
+Generated 2026-11-20 09:34 UTC from commit `f05ffe5`.
 
 | Page | Performance | Accessibility | Best practices | SEO |
 |---|---|---|---|---|
