@@ -15,10 +15,10 @@ button.addEventListener("click", function () {
 
 
 const type = document.querySelector("#type");
-const readingButton = document.querySelector("#reading");
+const readingButton = document.querySelector("#reading-toggle");
 
 readingButton.addEventListener("click", function () {
-  const reading = type.getAttribute("href") === "reading.css";
+  const active = type.getAttribute("href") === "reading.css";
 
-  type.setAttribute("href", reading ? "" : "reading.css");
+  type.setAttribute("href", actives ? "" : "reading.css");
 })
