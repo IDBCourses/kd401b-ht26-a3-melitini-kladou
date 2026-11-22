@@ -83,7 +83,7 @@ h1 {
     font-family: var(--h1-font-family);
     font-weight: var(--h1-font-weight);
     font-size: var(--h1-font-size);
-    line-height: var(--h1--line-height);
+    line-height: var(--h1-line-height);
     letter-spacing: var(--h1-letter-spacing);
 }
 
@@ -107,7 +107,7 @@ h3 {
 }
 
 a {
-    color: var(--color-accent-500);
+    color: var(--color-accent-600);
 }
 
 
