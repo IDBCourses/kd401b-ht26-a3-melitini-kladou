@@ -22,78 +22,173 @@
   <body>
     
     <header>
-      <h1>Blog Site Title</h1>
-      <nav>
+      <h1>Melitini Kladou</h1>
+      <nav aria-label="Main Navigation">
         <ul>
-          <li><a href=".">Home</a></li>
-          <li><a href=".">About</a></li>
-          <li><a href=".">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
      
     </header>
 
     <main>
-      <!-- Blog Post 1 -->
-      <article>
-        <h2>Title of the First Blog Post</h2>
-        <p>
-          <time datetime="2025-11-11">November 11, 2025</time> by Author Name
-        </p>
-        <figure>
-          <img 
-             src="https://picsum.photos/seed/portfolio/600/400"
-             alt="Placeholder landscape image"
-             >
-            <figcaption>
-              Placeholder image used for layout testing
-            </figcaption>
-        </figure>
-        <section>
-          <h3>Introduction</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ea accusantium quae ipsa unde labore pariatur laudantium illum tenetur? 
-          </p>Eligendi asperiores nulla numquam neque at quod pariatur ea consectetur nesciunt.
-          <figure>
-            <img 
-               src="https://placehold.co/600x400"
-               alt="Placeholder Image"
-               >
-            <figcaption>Placeholder image used for layout testing.</figcaption>
-          </figure>  
-          <blockquote>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam maiores, molestias quos possimus ullam unde. Velit ipsa debitis deleniti. Accusantium molestiae unde illo molestias voluptas fuga at omnis vero soluta!
-          </blockquote>
-        </section>
-        <section>
-          <h3>Main Content Section</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, reiciendis quibusdam expedita, voluptatum magni quia nemo blanditiis sequi laboriosam impedit, inventore distinctio? Dicta, similique debitis quam aut cumque laborum quia!
-          </p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis reiciendis recusandae hic accusantium ipsam architecto consectetur nemo nobis culpa vel, est ex, aut quo illum, at illo ipsa iure enim.</p>
-        </section>
-        <!-- Optional: Comments section -->
-        <section aria-label="Comments">
-          <h4>Comments</h4>
-          <p>Comment 1: Great post!</p>
-        </section>
-      </article>
+      <section id="about">
+        <h2>About me</h2>
 
-      <!-- Optional: Sidebar with related content -->
-      <aside>
-        <h3>Related Links</h3>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-        </ul>
-      </aside>
+        <p>
+          I am an Interaction Design student at Malmö University.
+          My work focuses on user experience, prototyping, programming
+          and digital design.
+        </p>
+      </section>
+      <!-- Blog Post 1 -->
+       <section id="projects">
+        <h2>Projects</h2>
+
+        <fieldset>
+          <legend>Show projects in</legend>
+
+          <button type="button" data-filter="all">
+            All projects
+          </button>
+
+          <button type="button" data-filter="ux">
+            UX/UI
+          </button>
+
+          <button type="button" data-filter="visual">
+            Visual Design
+          </button>
+
+          <button type="button" data-filter="code">
+            Code
+          </button>
+         </fieldset>
+
+        <p id="project-results">
+          Showing all 4 projects
+        </p>
+
+        <div class="project-list">
+
+          <article class="project" data-category="ux">
+            <h3>Family Trivia App Prototype</h3>
+            <p>
+              An interaction design concept that supports quality
+              time between parents and teenagers.
+            </p>
+          </article>
+
+         <article class="project" data-category="code">
+          <h3>Interactive Sound Instrument</h3>
+          <p>
+            An interactive web instrument built using JavaScript
+            and Tone.js.
+          </p>
+         </article>
+
+         <article class="project" data-category="visual">
+          <h3>Paper Camera Replica</h3>
+          <p>
+            A physical prototype exploring shape, structure
+            and fabrication.
+          </p>
+         </article>
+
+         <article class="project" data-category="visual">
+          <h3>Press-Fit Container</h3>
+          <p>
+            A laser-cut MDF container assembled without
+            glue, nails or screws.
+          </p>
+         </article>
+       </div>
+
+      </section>
+
+    <section id="contact">
+
+      <h2>Get in touch</h2>
+
+      <p>
+        Want to talk about a project, a collaboration or an internship?
+        Send me a message and I will get back to you.
+      </p>
+     <form action="https://formspree.io/f/xeagwgeq" method="POST">
+
+    
+      <div class="form-group">
+        <label for="name">Your name</label>
+
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your email</label>
+
+      <input type="email" id="email" name="email" aria-describedby="email-help email-error" required>
+
+      <p id="email-error" hidden>
+        Enter your email address so I can reply to you.
+      </p>
+    </div>
+
+    <p id="email-help">
+      So I can reply to you. I won't share it with anyone.
+    </p>
+
+    <div class="form-group">
+      <label for="message">
+        Your message
+      </label>
+
+      <textarea id="message" name="message" rows="6" aria-describedby="message-help message-error" required>
+
+      </textarea>
+     
+      <p id="message-help">
+        A few lines about your project or question is enough.
+      </p>
+
+      <p id="message-error" hidden>
+        Write a short message before sending.
+      </p>
+    </div>
+
+    <button type="submit">Send message</button>
+    </form>
+    </section>
+
+    <section id="success-message" hidden>
+
+      <h2>Thanks, your message was sent successfully!</h2>
+
+      <p>
+        I'll reply to you within three working days.
+        Thanks for your understanding.
+      </p>
+
+      <p>
+        <a href="#projects">Check my projects</a>
+      </p>
+    </section>
     </main>
+      
+      
+      
+      
+      
+
+      
 
     <footer>
-      <p>&copy; 2025 Blog Site. All rights reserved.</p>
+      <p>&copy; 2026 Melitini Kladou</p>
       <p><a href="mailto:contact@example.com">Contact Us</a></p>
     </footer>
     <script src="script.js"></script>
     <button id="theme" type="button">Dark Mode</button>
-    <button id="reading-toggle" type="button">Reading Modes</button>
+    <button id="reading-toggle" type="button">Reading Mode</button>
   </body>
 </html>
